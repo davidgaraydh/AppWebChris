@@ -3,7 +3,7 @@
 session_start();
 
 if(count($_SESSION)==0){
-header('Location: http://localhost/ProyectosClientes/AppWeb_Christian/login.php');
+header('Location: 45.90.108.106/AppWebChris/login.php');
 }
 
 
@@ -340,7 +340,7 @@ header('Location: http://localhost/ProyectosClientes/AppWeb_Christian/login.php'
 
 
 if(data==1){
-    window.location.href = "http://localhost/ProyectosClientes/AppWeb_Christian/login.php";
+    window.location.href = "45.90.108.106/AppWebChris/login.php";
 }
 
 

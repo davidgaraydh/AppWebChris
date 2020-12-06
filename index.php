@@ -552,7 +552,7 @@ header('Location: 45.90.108.106/AppWebChris/login.php');
 
 
 if(data==1){
-    window.location.href = "http://localhost/ProyectosClientes/AppWeb_Christian/login.php";
+    window.location.href = "45.90.108.106/AppWebChris/login.php";
 }
 
 
