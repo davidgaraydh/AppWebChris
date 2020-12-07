@@ -57,7 +57,7 @@ Class Opciones{
 
  function Save(){
 
- include '../../routes.php';
+ include '../../Routes.php';
 include $SubRutadbConnect;
 include $SubRutaAutoActions;
 
@@ -325,7 +325,7 @@ echo 0;
 
 function Update(){
 
-   include '../../routes.php';
+   include '../../Routes.php';
 include $SubRutadbConnect;
 include $SubRutaAutoActions;
 
@@ -405,7 +405,7 @@ mysqli_close($conn);
 
 
 function DeleteItem(){
-   include '../../routes.php';
+   include '../../Routes.php';
 include $SubRutadbConnect;
 include $SubRutaAutoActions;
 

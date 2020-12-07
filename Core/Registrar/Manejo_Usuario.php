@@ -31,7 +31,7 @@ Class Usuario{
 
 
 
- include '../../routes.php';
+ include '../../Routes.php';
 include $SubRutadbConnect;
 include $SubRutaAutoActions;
 

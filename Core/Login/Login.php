@@ -159,7 +159,7 @@ echo json_decode(0);
 
 function getName($n,$email) { 
 
- include '../../routes.php';
+ include '../../Routes.php';
 include $SubRutadbConnect;
 
     $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'; 
@@ -193,7 +193,7 @@ function Editar(){
 
 
 
-   include '../../routes.php';
+   include '../../Routes.php';
 include $SubRutadbConnect;
 include $SubRutaAutoActions;
 
