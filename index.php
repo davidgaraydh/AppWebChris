@@ -3,7 +3,7 @@
 session_start();
 
 if(count($_SESSION)==0){
-header('Location: 45.90.108.106/AppWebChris/login.php');
+header('Location: dohsantest.online/AppWebChris/login.php');
 }
 
 ?>
@@ -552,7 +552,7 @@ header('Location: 45.90.108.106/AppWebChris/login.php');
 
 
 if(data==1){
-    window.location.href = "45.90.108.106/AppWebChris/login.php";
+    window.location.href = "dohsantest.online/AppWebChris/login.php";
 }
 
 

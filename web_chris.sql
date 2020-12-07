@@ -34,10 +34,7 @@ CREATE TABLE IF NOT EXISTS `web_chris`.`tb_usuario` (
   `FechaAlta` DATETIME NOT NULL,
   `Estatus` TINYINT(1) NOT NULL,
   PRIMARY KEY (`idUsuario`),
-  INDEX `Nick` (`Nick` ASC) VISIBLE)
-ENGINE = InnoDB
-AUTO_INCREMENT = 30
-DEFAULT CHARACTER SET = utf8mb4;
+  INDEX `Nick` (`Nick` ASC));
 
 
 -- -----------------------------------------------------
@@ -48,12 +45,10 @@ CREATE TABLE IF NOT EXISTS `web_chris`.`cuenta` (
   `FechaCuenta` DATETIME NOT NULL,
   `idUsuarioFK` INT(11) NOT NULL,
   PRIMARY KEY (`id`),
-  INDEX `idUsuarioFK` (`idUsuarioFK` ASC) VISIBLE,
+  INDEX `idUsuarioFK` (`idUsuarioFK` ASC),
   CONSTRAINT `cuenta_ibfk_1`
     FOREIGN KEY (`idUsuarioFK`)
-    REFERENCES `web_chris`.`tb_usuario` (`idUsuario`))
-ENGINE = InnoDB
-DEFAULT CHARACTER SET = utf8mb4;
+    REFERENCES `web_chris`.`tb_usuario` (`idUsuario`));
 
 
 -- -----------------------------------------------------
@@ -66,10 +61,7 @@ CREATE TABLE IF NOT EXISTS `web_chris`.`failed_jobs` (
   `payload` LONGTEXT NOT NULL,
   `exception` LONGTEXT NOT NULL,
   `failed_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP(),
-  PRIMARY KEY (`id`))
-ENGINE = InnoDB
-DEFAULT CHARACTER SET = utf8mb4
-COLLATE = utf8mb4_unicode_ci;
+  PRIMARY KEY (`id`));
 
 
 -- -----------------------------------------------------
@@ -102,9 +94,7 @@ CREATE TABLE IF NOT EXISTS `web_chris`.`tb_acciones` (
   `idUsuario` VARCHAR(200) NOT NULL,
   `Fecha` DATETIME NOT NULL,
   `Estatus` TINYINT(3) NOT NULL,
-  PRIMARY KEY (`idAcciones`))
-ENGINE = InnoDB
-DEFAULT CHARACTER SET = utf8mb4;
+  PRIMARY KEY (`idAcciones`));
 
 
 -- -----------------------------------------------------
@@ -132,13 +122,10 @@ CREATE TABLE IF NOT EXISTS `web_chris`.`tb_formulario` (
   `Fecha` DATETIME NOT NULL,
   `Estatus` TINYINT(2) NOT NULL,
   PRIMARY KEY (`idFormulario`),
-  INDEX `idUsuario` (`Nick` ASC) VISIBLE,
+  INDEX `idUsuario` (`Nick` ASC),
   CONSTRAINT `fk_usuario_formulario`
     FOREIGN KEY (`Nick`)
-    REFERENCES `web_chris`.`tb_usuario` (`Nick`))
-ENGINE = InnoDB
-AUTO_INCREMENT = 61
-DEFAULT CHARACTER SET = utf8mb4;
+    REFERENCES `web_chris`.`tb_usuario` (`Nick`));
 
 
 -- -----------------------------------------------------
@@ -158,9 +145,7 @@ CREATE TABLE IF NOT EXISTS `web_chris`.`tb_futuros` (
   `idUsuario` VARCHAR(200) NOT NULL,
   `Fecha` DATETIME NOT NULL,
   `Estatus` TINYINT(3) NOT NULL,
-  PRIMARY KEY (`idFuturo`))
-ENGINE = InnoDB
-DEFAULT CHARACTER SET = utf8mb4;
+  PRIMARY KEY (`idFuturo`));
 
 
 -- -----------------------------------------------------
@@ -175,10 +160,7 @@ CREATE TABLE IF NOT EXISTS `web_chris`.`tb_log` (
   `Lectura_Noti` INT(10) NOT NULL,
   `FechaAccion` DATETIME NOT NULL,
   `Status` TINYINT(2) NOT NULL,
-  PRIMARY KEY (`idLog`))
-ENGINE = InnoDB
-AUTO_INCREMENT = 284
-DEFAULT CHARACTER SET = latin1;
+  PRIMARY KEY (`idLog`));
 
 
 -- -----------------------------------------------------
@@ -207,10 +189,7 @@ CREATE TABLE IF NOT EXISTS `web_chris`.`tb_opciones` (
   `idUsuario` FLOAT NULL DEFAULT NULL,
   `Fecha` VARCHAR(100) NOT NULL,
   `Estatus` TINYINT(2) NULL DEFAULT NULL,
-  PRIMARY KEY (`idOpcion`))
-ENGINE = InnoDB
-AUTO_INCREMENT = 3
-DEFAULT CHARACTER SET = utf8mb4;
+  PRIMARY KEY (`idOpcion`));
 
 
 -- -----------------------------------------------------

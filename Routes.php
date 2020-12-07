@@ -1,6 +1,6 @@
 <?php
 
- $RutaInicial="45.90.108.106/AppWebChris/";
+ $RutaInicial="http://localhost/ProyectosClientes/AppWeb_Christian/";
  $SubRutadbConnect="../BD/db_connect.php";
   $pageMaster="js/JSPages/master.js";
 $SubRutaJqueryEasing="vendor/jquery-easing/jquery.easing.min.js";

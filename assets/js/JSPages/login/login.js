@@ -67,7 +67,7 @@ $("#error").append("<b><label>"+error+"</label></b>");
                 },
                 success: function(data) {
                    if(data==1) {
-location.href="45.90.108.106/AppWebChris/index.php";
+location.href="dohsantest.online/AppWebChris/index.php";
                    }else if(data==0) {
                    $("#FalloCredenciales").removeClass("d-none");
                    }
