@@ -2,7 +2,7 @@
 <?php
 
 
-include 'Routes.php';
+include 'routes.php';
 
 
  ?>

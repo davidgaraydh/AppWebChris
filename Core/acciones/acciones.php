@@ -56,7 +56,7 @@ Class acciones{
 
 
 
- include '../../Routes.php';
+ include '../../routes.php';
 include $SubRutadbConnect;
 include $SubRutaAutoActions;
 
@@ -256,7 +256,7 @@ echo 0;
 
 function Update(){
 
-   include '../../Routes.php';
+   include '../../routes.php';
 include $SubRutadbConnect;
 include $SubRutaAutoActions;
 
@@ -317,7 +317,7 @@ mysqli_close($conn);
 
 
 function DeleteItem(){
-   include '../../Routes.php';
+   include '../../routes.php';
 include $SubRutadbConnect;
 include $SubRutaAutoActions;
 
